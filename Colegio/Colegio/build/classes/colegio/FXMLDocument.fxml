@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="533.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="colegio.FXMLDocumentController">
+   <children>
+      <TabPane prefHeight="623.0" prefWidth="533.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Alumnos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="572.0" prefWidth="512.0">
+                     <children>
+                        <Label layoutX="22.0" layoutY="34.0" prefHeight="18.0" prefWidth="64.0" text="Nombre:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtNombre" layoutX="86.0" layoutY="32.0" />
+                        <Label layoutX="257.0" layoutY="34.0" prefHeight="18.0" prefWidth="64.0" text="Apellido:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtApellido" layoutX="321.0" layoutY="32.0" />
+                        <Label layoutX="22.0" layoutY="74.0" prefHeight="18.0" prefWidth="64.0" text="Edad:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtEdad" layoutX="86.0" layoutY="72.0" />
+                        <TextField fx:id="txtCurso" layoutX="321.0" layoutY="72.0" />
+                        <Label layoutX="257.0" layoutY="74.0" prefHeight="18.0" prefWidth="64.0" text="Curso:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="370.0" layoutY="126.0" mnemonicParsing="false" onAction="#agregar" prefHeight="23.0" prefWidth="78.0" text="Agregar" />
+                        <Label fx:id="lblInfo" layoutX="22.0" layoutY="131.0" prefHeight="14.0" prefWidth="327.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Cursos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

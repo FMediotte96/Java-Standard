@@ -1,0 +1,8 @@
+Rojo
+Azul
+Verde
+Negro
+Blanco
+Gris
+Amarillo
+Bordo

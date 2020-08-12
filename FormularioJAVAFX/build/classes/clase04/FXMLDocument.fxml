@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clase04.FXMLDocumentController">
+   <children>
+      <Label layoutX="28.0" layoutY="27.0" prefHeight="24.0" prefWidth="49.0" text="Nombre:" />
+      <TextField fx:id="txtNombre" layoutX="77.0" layoutY="28.0" prefHeight="22.0" prefWidth="229.0" promptText="Ingrese su nombre" />
+      <Button layoutX="322.0" layoutY="27.0" mnemonicParsing="false" onAction="#aceptar" prefHeight="24.0" prefWidth="68.0" text="Aceptar" />
+      <CheckBox fx:id="chkBici" layoutX="28.0" layoutY="76.0" mnemonicParsing="false" text="Bici" />
+      <CheckBox fx:id="chkMoto" layoutX="28.0" layoutY="106.0" mnemonicParsing="false" text="Moto" />
+      <CheckBox fx:id="chkAuto" layoutX="28.0" layoutY="138.0" mnemonicParsing="false" text="Auto" />
+      <Button layoutX="337.0" layoutY="233.0" mnemonicParsing="false" onAction="#agregar" prefHeight="22.0" prefWidth="77.0" text="Agregar" />
+      <TextArea fx:id="txaTexto" editable="false" layoutX="9.0" layoutY="266.0" prefHeight="200.0" prefWidth="456.0" />
+      <RadioButton fx:id="radSoltero" layoutX="266.0" layoutY="77.0" mnemonicParsing="false" text="Soltero" />
+      <RadioButton fx:id="radCasado" layoutX="266.0" layoutY="99.0" mnemonicParsing="false" text="Casado" />
+      <RadioButton fx:id="radViudo" layoutX="266.0" layoutY="122.0" mnemonicParsing="false" text="Viudo" />
+      <RadioButton fx:id="radDivorciado" layoutX="266.0" layoutY="147.0" mnemonicParsing="false" text="Divorciado" />
+      <Label layoutX="28.0" layoutY="197.0" text="Color:" />
+      <ComboBox fx:id="cmbColores" layoutX="77.0" layoutY="193.0" prefWidth="150.0" />
+      <Button layoutX="48.0" layoutY="233.0" mnemonicParsing="false" onAction="#salir" prefHeight="22.0" prefWidth="77.0" text="Salir" />
+   </children>
+</AnchorPane>

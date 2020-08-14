@@ -1,0 +1,49 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ar.com.educacionit.vehiculos.presentacion.ventanas;
+
+/**
+ *
+ * @author Facundo
+ */
+public enum Ventanas {
+    
+    VentanaPrincipal("/ar/com/educacionit/vehiculos/presentacion/ventanas/VentanaMaestra.fxml", "Administracion de Concesionaria"), 
+    AutosVentana("/ar/com/educacionit/vehiculos/presentacion/ventanas/AutosVentana.fxml", "Administracion de Autos"), 
+    VendedoresVentana("/ar/com/educacionit/vehiculos/presentacion/ventanas/VendedoresVentana.fxml", "Administracion de Vendedores"), 
+    CompradoresVentana("/ar/com/educacionit/vehiculos//presentacion/ventanas/CompradoresVentana.fxml", "Administracion de Compradores"),
+    AutosEdicion("/ar/com/educacionit/vehiculos/presentacion/ventanas/AutosEdicion.fxml", "Registrar Auto"),
+    CompradoresEdicion("/ar/com/educacionit/vehiculos/presentacion/ventanas/CompradoresEdicion.fxml", "Registrar Comprador"),
+    VendedoresEdicion("/ar/com/educacionit/vehiculos/presentacion/ventanas/VendedoresEdicion.fxml", "Registrar Vendedor"),
+    VentanaConfiguracion("/ar/com/educacionit/vehiculos/presentacion/ventanas/VentanaConfiguracion.fxml", "Configuracion");
+    
+    private String path;
+    private String title;
+    private Boolean isopen;
+
+    public String getPath() {
+        return path;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Boolean getIsopen() {
+        return isopen;
+    }
+
+    public void setIsopen(Boolean isopen) {
+        this.isopen = isopen;
+    }
+    
+    private Ventanas(String path, String title) {
+        this.path = path;
+        this.title = title;
+        isopen = false;
+    }
+    
+}

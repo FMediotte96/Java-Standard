@@ -1,0 +1,7 @@
+Curso de Java.
+Privamera.
+Verano.
+Otoño.
+Invierno.
+Soleado
+Lluvioso

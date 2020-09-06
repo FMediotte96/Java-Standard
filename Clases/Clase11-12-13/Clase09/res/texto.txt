@@ -1,0 +1,6 @@
+Curso de Java.
+Primavera.
+Verano.
+Otoño.
+Día
+Soleado

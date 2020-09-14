@@ -6,11 +6,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.Path;
 
 /**
  * Servlet implementation class HolaServlet
  */
 @WebServlet("/HolaServlet")
+@Path("/")
 public class HolaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

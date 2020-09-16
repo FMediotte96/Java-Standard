@@ -41,14 +41,15 @@ public class Main {
 		lista.add(new Persona(5,"G"));
 		lista.add(new Persona(3,"F"));
 		
+		//1. Comparator with lambda
 		Comparator<Persona> porNombre = (Persona p, Persona p1) -> p.getFullname().compareTo(p1.getFullname());
-		Collections.sort(lista, porNombre);
+		lista.sort(porNombre);
 		
 		for(Persona p : lista) {
 			System.out.println(p);
 		}
 
-		//Sobrescribir metodos 
+		//2. Sobrescribir metodos 
 		Collections.sort(lista, new Comparator<Persona>() {
 
 			@Override
